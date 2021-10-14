@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AHBC October Week One", "AHBC Day One\AHBC October Week One.csproj", "{7F440DC0-EFA3-4416-87CB-4C1036C01B6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AHBC October Week One", "AHBC October Week One\AHBC October Week One.csproj", "{BC55E45F-5362-4594-8E98-6D8715D7D54D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7F440DC0-EFA3-4416-87CB-4C1036C01B6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F440DC0-EFA3-4416-87CB-4C1036C01B6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F440DC0-EFA3-4416-87CB-4C1036C01B6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F440DC0-EFA3-4416-87CB-4C1036C01B6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC55E45F-5362-4594-8E98-6D8715D7D54D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC55E45F-5362-4594-8E98-6D8715D7D54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC55E45F-5362-4594-8E98-6D8715D7D54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC55E45F-5362-4594-8E98-6D8715D7D54D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
