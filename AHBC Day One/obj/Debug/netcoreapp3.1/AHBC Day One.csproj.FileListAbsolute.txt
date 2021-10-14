@@ -1,0 +1,13 @@
+C:\Code\AHBC Training Sessions\AHBC Day One\bin\Debug\netcoreapp3.1\AHBC Day One.exe
+C:\Code\AHBC Training Sessions\AHBC Day One\bin\Debug\netcoreapp3.1\AHBC Day One.deps.json
+C:\Code\AHBC Training Sessions\AHBC Day One\bin\Debug\netcoreapp3.1\AHBC Day One.runtimeconfig.json
+C:\Code\AHBC Training Sessions\AHBC Day One\bin\Debug\netcoreapp3.1\AHBC Day One.runtimeconfig.dev.json
+C:\Code\AHBC Training Sessions\AHBC Day One\bin\Debug\netcoreapp3.1\AHBC Day One.dll
+C:\Code\AHBC Training Sessions\AHBC Day One\bin\Debug\netcoreapp3.1\AHBC Day One.pdb
+C:\Code\AHBC Training Sessions\AHBC Day One\obj\Debug\netcoreapp3.1\AHBC Day One.csproj.CoreCompileInputs.cache
+C:\Code\AHBC Training Sessions\AHBC Day One\obj\Debug\netcoreapp3.1\AHBC Day One.AssemblyInfoInputs.cache
+C:\Code\AHBC Training Sessions\AHBC Day One\obj\Debug\netcoreapp3.1\AHBC Day One.AssemblyInfo.cs
+C:\Code\AHBC Training Sessions\AHBC Day One\obj\Debug\netcoreapp3.1\AHBC Day One.dll
+C:\Code\AHBC Training Sessions\AHBC Day One\obj\Debug\netcoreapp3.1\AHBC Day One.pdb
+C:\Code\AHBC Training Sessions\AHBC Day One\obj\Debug\netcoreapp3.1\AHBC Day One.genruntimeconfig.cache
+C:\Code\AHBC Training Sessions\AHBC Day One\obj\Debug\netcoreapp3.1\AHBC Day One.csprojAssemblyReference.cache
