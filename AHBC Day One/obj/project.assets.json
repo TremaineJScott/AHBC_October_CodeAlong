@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\AHBC Training Sessions\\AHBC Day One\\AHBC Day One.csproj",
-      "projectName": "AHBC Day One",
-      "projectPath": "C:\\Code\\AHBC Training Sessions\\AHBC Day One\\AHBC Day One.csproj",
+      "projectUniqueName": "C:\\Code\\AHBC Training Sessions\\AHBC Day One\\AHBC October Week One.csproj",
+      "projectName": "AHBC October Week One",
+      "projectPath": "C:\\Code\\AHBC Training Sessions\\AHBC Day One\\AHBC October Week One.csproj",
       "packagesPath": "C:\\Users\\Trema\\.nuget\\packages\\",
       "outputPath": "C:\\Code\\AHBC Training Sessions\\AHBC Day One\\obj\\",
       "projectStyle": "PackageReference",
