@@ -17,52 +17,51 @@ namespace AHBC_Day_One
             bool isCorrectAnswer = false;
             bool playAgain = true;
 
-
-
-            for (int counter = 0; counter < length; counter++)
+            for (int counter = 10; counter >= 0; counter--)
             {
-
+                Console.WriteLine(counter);
             }
 
-
-
-
-
-
-            do
+            do // Loop to play again
             {
-                do
+                for (int counter = 1; counter < 11; counter++)
                 {
-                    numberIsBad = true;
+                    Console.WriteLine($"Guess Number: {counter}");
+                        numberIsBad = true;
 
-                    while (numberIsBad == true)
-                    {
-                        Console.WriteLine("Pick a number from 1 - 20");
-                        userInput = Console.ReadLine();
-                        userNumber = int.Parse(userInput);
-                        if (userNumber > 20 || userNumber < 1)
+                        while (numberIsBad == true)
                         {
-                            // Fix bad number
-                            Console.WriteLine("bad number, try again.");
+                            Console.WriteLine("Pick a number from 1 - 20");
+                            userInput = Console.ReadLine();
+                            userNumber = int.Parse(userInput);
+                            if (userNumber > 20 || userNumber < 1)
+                            {
+                                // Fix bad number
+                                Console.WriteLine("bad number, try again.");
+                            }
+                            else
+                            {
+                                numberIsBad = false;
+                            }
+                        }
+
+                        if (userNumber == number)
+                        {
+                            isCorrectAnswer = true;
+                            Console.WriteLine("Yeah you guessed it.");
+                            break;
                         }
                         else
                         {
-                            numberIsBad = false;
-                        }
-                    }
+                            Console.WriteLine("Wrong!!! Guess again.");
+                        }                  
+                }
+                if (isCorrectAnswer == false)
+                {
+                    Console.WriteLine("You have run out of turns.");
+                }
 
-                    if (userNumber == number)
-                    {
-                        isCorrectAnswer = true;
-                        Console.WriteLine("Yeah you guessed it.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Wrong!!! Guess again.");
-                    }
-                } while (isCorrectAnswer == false);
-
-                Console.WriteLine("again");
+                Console.WriteLine("play again");
                 userInput = Console.ReadLine();
                 if (userInput.Trim().ToLower() == "no")
                 {
@@ -308,9 +307,7 @@ namespace AHBC_Day_One
             userInput = Console.ReadLine();
             double bankBalance = double.Parse(userInput);
 
-            int dollarAmount = (int)bankBalance;
-
-            Welcome(bankBalance.ToString());
+            int dollarAmount = (int)bankBalance;            
 
             string message = $"You have {0} in your account. Richness is {bankBalance >= 1000}";
 
