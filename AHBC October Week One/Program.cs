@@ -17,49 +17,48 @@ namespace AHBC_Day_One
             bool isCorrectAnswer = false;
             bool playAgain = true;
 
-
-
-            for (int counter = 0; counter < length; counter++)
+            for (int counter = 10; counter >= 0; counter--)
             {
-
+                Console.WriteLine(counter);
             }
 
-
-
-
-
-
-            do
+            do // Loop to play again
             {
-                do
-                {
-                    numberIsBad = true;
 
-                    while (numberIsBad == true)
+                do // Loops while answer is wrong
+                {
+                    for (int counter = 0; counter <= 10; counter++)
                     {
-                        Console.WriteLine("Pick a number from 1 - 20");
-                        userInput = Console.ReadLine();
-                        userNumber = int.Parse(userInput);
-                        if (userNumber > 20 || userNumber < 1)
+                        numberIsBad = true;
+
+                        while (numberIsBad == true)
                         {
-                            // Fix bad number
-                            Console.WriteLine("bad number, try again.");
+                            Console.WriteLine("Pick a number from 1 - 20");
+                            userInput = Console.ReadLine();
+                            userNumber = int.Parse(userInput);
+                            if (userNumber > 20 || userNumber < 1)
+                            {
+                                // Fix bad number
+                                Console.WriteLine("bad number, try again.");
+                            }
+                            else
+                            {
+                                numberIsBad = false;
+                            }
+                        }
+
+                        if (userNumber == number)
+                        {
+                            isCorrectAnswer = true;
+                            Console.WriteLine("Yeah you guessed it.");
+                            break;
                         }
                         else
                         {
-                            numberIsBad = false;
-                        }
+                            Console.WriteLine("Wrong!!! Guess again.");
+                        }                   
                     }
 
-                    if (userNumber == number)
-                    {
-                        isCorrectAnswer = true;
-                        Console.WriteLine("Yeah you guessed it.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Wrong!!! Guess again.");
-                    }
                 } while (isCorrectAnswer == false);
 
                 Console.WriteLine("again");
