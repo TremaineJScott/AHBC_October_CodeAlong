@@ -24,11 +24,9 @@ namespace AHBC_Day_One
 
             do // Loop to play again
             {
-
-                do // Loops while answer is wrong
+                for (int counter = 1; counter < 11; counter++)
                 {
-                    for (int counter = 0; counter <= 10; counter++)
-                    {
+                    Console.WriteLine($"Guess Number: {counter}");
                         numberIsBad = true;
 
                         while (numberIsBad == true)
@@ -56,12 +54,14 @@ namespace AHBC_Day_One
                         else
                         {
                             Console.WriteLine("Wrong!!! Guess again.");
-                        }                   
-                    }
+                        }                  
+                }
+                if (isCorrectAnswer == false)
+                {
+                    Console.WriteLine("You have run out of turns.");
+                }
 
-                } while (isCorrectAnswer == false);
-
-                Console.WriteLine("again");
+                Console.WriteLine("play again");
                 userInput = Console.ReadLine();
                 if (userInput.Trim().ToLower() == "no")
                 {
@@ -307,9 +307,7 @@ namespace AHBC_Day_One
             userInput = Console.ReadLine();
             double bankBalance = double.Parse(userInput);
 
-            int dollarAmount = (int)bankBalance;
-
-            Welcome(bankBalance.ToString());
+            int dollarAmount = (int)bankBalance;            
 
             string message = $"You have {0} in your account. Richness is {bankBalance >= 1000}";
 
