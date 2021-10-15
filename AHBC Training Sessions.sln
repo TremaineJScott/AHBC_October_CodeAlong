@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AHBC October Week One", "AHBC October Week One\AHBC October Week One.csproj", "{BC55E45F-5362-4594-8E98-6D8715D7D54D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AHBC October Week Two", "AHBC October Week Two\AHBC October Week Two.csproj", "{EC9F56BC-FA09-447E-AF4D-D1F660F47548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AHBC October Week Three", "AHBC October Week Three\AHBC October Week Three.csproj", "{508BAE12-F699-4D92-87A1-DB5082730916}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BC55E45F-5362-4594-8E98-6D8715D7D54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC55E45F-5362-4594-8E98-6D8715D7D54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC55E45F-5362-4594-8E98-6D8715D7D54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC9F56BC-FA09-447E-AF4D-D1F660F47548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9F56BC-FA09-447E-AF4D-D1F660F47548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9F56BC-FA09-447E-AF4D-D1F660F47548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9F56BC-FA09-447E-AF4D-D1F660F47548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{508BAE12-F699-4D92-87A1-DB5082730916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{508BAE12-F699-4D92-87A1-DB5082730916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{508BAE12-F699-4D92-87A1-DB5082730916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{508BAE12-F699-4D92-87A1-DB5082730916}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
