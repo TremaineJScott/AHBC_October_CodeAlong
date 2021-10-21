@@ -9,5 +9,9 @@ namespace AHBC_October_Week_Two.MySystem.MyText
 {
     class Class1
     {
+        public void DoStuff()
+        {
+
+        }
     }
 }

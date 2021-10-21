@@ -2,5 +2,10 @@
 {
     class Class1
     {
+        private void DoSomething()
+        {
+
+        }
+
     }
 }
