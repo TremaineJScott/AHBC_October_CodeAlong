@@ -12,10 +12,9 @@ namespace AHBC_October_Week_Three
             // GetAverageScore();
             //PracticeInterviewQuestions();
             Random random = new Random();
-            Random random2 = new Random();
-
-            int dieOne = random.Next(1, 7);
-            int dieTwo = random2.Next(1, 7);
+            int userInput =12; 
+            int dieOne = random.Next(1,userInput+1);
+            int dieTwo = random.Next(1, 7);
 
             Console.WriteLine($"Die one {dieOne} Die two {dieTwo}");
 
