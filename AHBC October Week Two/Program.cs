@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using System.Collections.Generic;
 
 
 namespace AHBC_October_Week_Two
@@ -18,11 +19,8 @@ namespace AHBC_October_Week_Two
             Console.WriteLine($"Fun level: {funValue}, {outputMessage}");
             Console.ReadKey();
 
-
             // DoStringManipulation();
-
-
-
+             
             SayHello();
             // Get the user's name
             string userName = GetUserName();
@@ -31,7 +29,7 @@ namespace AHBC_October_Week_Two
 
             int userAge = GetUserAge();
 
-            int computerAge = 0;
+            int computerAge = 50;
             int ageDifference = 50;
             try
             {
