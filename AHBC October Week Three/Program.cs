@@ -13,6 +13,8 @@ namespace AHBC_October_Week_Three
         {
             WorkingWithDictionaries();
 
+            //LessonWork();
+
             Environment.Exit(0);
 
             string[] weapons = new string[] { "sword", "dagger", "bow", "wand" };
@@ -183,9 +185,59 @@ namespace AHBC_October_Week_Three
             Dictionary<string,string> dictionary = new Dictionary<string, string>();
             dictionary.Add("sad", "not happy, gloomy feelings");
             dictionary.Add("cat", "an annoying animal that should never be in my house");
-            // dictionary.Add("cat", "many annoying animals that should never be in my house");
+            dictionary.Add("cats", "many annoying animals that should never be in my house");
             dictionary.Add("dog", "a fun animal");
             dictionary.Add("ferret", "a fun animal");
+
+
+            dictionary.Remove("cats");
+
+            Dictionary<int, string> shoppingCart = new Dictionary<int, string>();
+            shoppingCart.Add(12342, "Fancy Blue Shoes");
+            shoppingCart.Add(12534, "Ripped Jeans");
+
+            shoppingCart.Remove(12534);
+
+            string itemToRemove = Console.ReadLine();
+            itemToRemove = "Ripped Jeans";
+
+            // Does the item exist
+            bool doesItemExist = shoppingCart.ContainsValue(itemToRemove);
+            int itemsKey = -1;
+            // Get the key for the provide value
+            foreach(var item in shoppingCart)
+            {
+                if (item.Value == itemToRemove)
+                {
+                    itemsKey = item.Key;
+                    break;
+                }
+            }
+
+            shoppingCart.Remove(itemsKey);
+            shoppingCart.Clear();
+
+            Dictionary<string, List<string>> learnerFavoriteTopics = new Dictionary<string, List<string>>();
+
+
+            List<string> stevesList = new List<string>() { "gaming", "camping", "biking" };
+            List<string> aprilsList = new List<string>() { "reading", "hiking", "running", "writing" };
+            List<string> kalindisList = new List<string>() { "emotions", "reptiles" };
+
+            learnerFavoriteTopics.Add("steve", stevesList);
+            learnerFavoriteTopics.Add("april", aprilsList);
+            learnerFavoriteTopics.Add("kalindi", kalindisList);
+
+            foreach (var learnerList in learnerFavoriteTopics)
+            {
+                Console.WriteLine($"The list of topics to talk to {learnerList.Key} about:");
+                foreach (string topic in learnerList.Value)
+                {
+                    Console.WriteLine(topic);
+                }
+            }
+
+            Console.ReadKey();
 
             Dictionary<int, bool> drinkingAgeVerification = new Dictionary<int, bool>();
             drinkingAgeVerification.Add(18, false);
@@ -201,6 +253,8 @@ namespace AHBC_October_Week_Three
 
             int userInt = 25;
             bool userBool = true;
+
+            bool doesTextExist = dictionary.ContainsValue("a fun animal");
 
             bool doesExist = drinkingAgeVerification.ContainsKey(userInt);
             if (doesExist)
@@ -229,12 +283,15 @@ namespace AHBC_October_Week_Three
             }
 
             // this code can not be done use the code above
+            /*
             foreach (var meal in meals)
             {
                 Console.WriteLine($"What did you have for {meal.Key}?");
                 string userInput = Console.ReadLine();
                 meal.Value = userInput;
             }
+            */
+
             Console.ReadKey();
         }
 
@@ -242,6 +299,8 @@ namespace AHBC_October_Week_Three
         public static void UserReference()
         {
             string userName = "scott";
+            string updatedName;
+            CreateNewUserName(userName, out updatedName);
             Console.WriteLine(userName);
             ChangeUserName(ref userName);
             Console.WriteLine(userName);
@@ -249,6 +308,11 @@ namespace AHBC_October_Week_Three
         public static void ChangeUserName(ref string name)
         {
             name = "john";
+        }
+
+        public static void CreateNewUserName(string name, out string newName)
+        {
+            newName = name + "awesome";
         }
 
         public static void RandomDiscussion()
@@ -436,14 +500,56 @@ namespace AHBC_October_Week_Three
             }
 
             // string[] healthyMeals = new string[5];
-            string[] healthyMeals = new string[] { "bread", "milk", "butter", "soda", "cheese" };
+            List<string> groceryList = new List<string>() { "bread", "milk", "butter", "soda", "cheese" };
+            groceryList.Add("ice cream");
+            groceryList.Insert(0, "pop tarts");
 
-            meals.CopyTo(healthyMeals, 3);
+            bool addMore = true;
+            while (addMore)
+            {
+                Console.WriteLine("add to your list:");
+                groceryList.Add(Console.ReadLine());
+                Console.WriteLine("add another?");
+                if (Console.ReadLine().ToLower().Trim() == "no")
+                {
+                    addMore = false;
+                }
+            }
 
-            healthyMeals[3] = "ice cream";
-            healthyMeals[4] = "pop tarts";
+            Console.Clear();
+            Console.WriteLine("your grocery list");
+
+            foreach(string groceryItem in groceryList)
+            {
+                Console.WriteLine(groceryItem);
+            }
+
+            Console.ReadKey();                           
 
             //Console.WriteLine($"name is {names[0]}, grade is {grades[0]}, answers are {answers[0]}");
+
+        }
+
+
+        static void WorkingWithStacksAndQueues()
+        {
+            Stack<string> deckOfCards = new Stack<string>(); // LIFO - Last In First Out
+            deckOfCards.Push("ace of spades");
+            deckOfCards.Push("two of hearts");
+
+            Console.WriteLine(deckOfCards.Peek()); // Two of Hearts
+            Console.WriteLine(deckOfCards.Pop()); // Two of Hearts
+            Console.WriteLine(deckOfCards.Pop()); // Ace of Spades
+
+            Queue<string> onHoldCalls = new Queue<string>(); // FIFO - First In First Out
+            onHoldCalls.Enqueue("scott's grandma");
+            onHoldCalls.Enqueue("scott");
+            onHoldCalls.Enqueue("brian");
+
+            Console.WriteLine(onHoldCalls.Dequeue()); // scott's grandma
+            Console.WriteLine(onHoldCalls.Peek()); // scott
+            Console.WriteLine(onHoldCalls.Dequeue());// scott
+            Console.WriteLine(onHoldCalls.Dequeue()); // brian
 
         }
     }
