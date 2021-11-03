@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace WeekFour
+namespace AhbcOctoberWeekFour
 {
     class Program
     {
         public static void Main(string[] args)
         {
-            WorkWithRegEx();
+            
             
             Console.ReadKey();
+            WorkWithRegEx();
             WorkWithEnums();
             WorkWithLINQ();
             WorkWithLambda();
@@ -46,8 +47,6 @@ namespace WeekFour
 
 
         }
-
-
         public static void WorkWithEnums()
         {
             Dictionary<string, BookGenre> bookCollection = new Dictionary<string, BookGenre>();
@@ -110,8 +109,6 @@ namespace WeekFour
 
 
         }
-
-
         public static void WorkWithLINQ()
         {
             List<string> movies = new List<string>() { "Dune", "Jurassic Park", "Planet of the Apes", "Venom", "Friday the 13th" };
@@ -153,7 +150,6 @@ namespace WeekFour
             char[] stringChar = longString.ToCharArray();
             stringChar.Reverse();
         }
-
         public static bool GetVotingLegallity(int age)
         {
             if (age < 17)
