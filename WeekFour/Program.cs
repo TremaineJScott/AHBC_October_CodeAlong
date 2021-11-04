@@ -9,15 +9,72 @@ namespace AhbcOctoberWeekFour
     {
         public static void Main(string[] args)
         {
-            
-            
+            Console.WriteLine("What color is this text");
             Console.ReadKey();
+            WorkWithClasses();
+            
             WorkWithRegEx();
             WorkWithEnums();
             WorkWithLINQ();
             WorkWithLambda();
+
+            Console.WriteLine("Enter your name.");
+            string userName = Console.ReadLine();
+            Console.WriteLine("Enter a number.");
+            int firstInput = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter a number.");
+            int secondInput = int.Parse(Console.ReadLine());
+
+            int calculationAnswer;
+            calculationAnswer = Calulate(firstInput, secondInput);       
+
+            calculationAnswer = Calculator.AddTwoNumbers(firstInput, secondInput);
+
+            Console.ReadLine();
         }
 
+        public static int Calulate(int firstNumber, int secondNumber)
+        {
+            int answer = firstNumber + secondNumber;
+            return answer;
+        }
+
+        public static void WorkWithClasses()
+        {
+            string message = "";
+            Book currentBook = new Book(
+                "Hitchhikers Guide","Funny book about space travel",400);
+            //currentBook.title = "Hitchhikers Guide";
+            //currentBook.authors.Add("Douglas Adams");
+            message = currentBook.AddAuthor("Douglas Adams");
+            currentBook.CopyrightDate = DateTime.Parse("01/01/1980");
+            System.Console.WriteLine(currentBook.Title);
+            currentBook.Title = "new title";
+
+            List<Book> hitchhikerSeries = new List<Book>();
+            // Create the book
+            Book bookOne  = new Book(
+                "Hitchhikers Guide", "Funny book about space travel",400);
+
+            //bookOne.title = "Hitchhikers Guide Two";
+            //bookOne.authors.Add("Douglas Adams");
+            message = bookOne.AddAuthor("Douglas Adams");
+            Console.WriteLine(message);
+            bookOne.CopyrightDate = DateTime.Parse("01/01/1980");
+            // Add the book
+            hitchhikerSeries.Add(bookOne);
+
+            // Create Next Book
+            Book bookLast = new Book(
+                "So Long and Thanks for all the Fish", "Funny book about space travel", 400);
+            //bookLast.authors.Add("Douglas Adams");
+            //bookLast.title = "So Long and Thanks for all the Fish";
+
+            Book secondBook = new Book(
+                "Restaurant at the end", "Funny book about space travel",400);
+                     
+
+        }
         public static void WorkWithRegEx()
         {
             // Regular Expressions (RegEx)
@@ -31,11 +88,10 @@ namespace AhbcOctoberWeekFour
             string canadianPostalCode = "^[A-Z][0-9][A-Z] [0-9][A-Z][0-9]$";
             string websiteURl = "^[w|W]{3}.[A-Za-z0-9_]+.[A-Za-z]{2,4}$";
 
-            websiteURl = @"^(http|https|ftp):[\/]{2}([a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,4})(:[0-9]+)?\/?([a-zA-Z0-9\-\._\?\,\'\/\\\+&amp;%\$#\=~]*)
-"
+            pattern = "[a-zA-Z0-9]+$";
             Regex regex = new Regex(pattern);
+            Console.WriteLine("What is your name");
             string input = Console.ReadLine();
-
             bool isMatch = regex.IsMatch(input);
 
             if (isMatch == false)
@@ -128,7 +184,7 @@ namespace AhbcOctoberWeekFour
             Console.WriteLine($"The first movie in the list is {movies.First()}");
             List<int> payChecks = new List<int>() { 100, 233, 32, 236, 6543 };
 
-            Console.Clear();           
+            // Console.Clear();           
 
             Console.WriteLine($"your biggest paycheck is {payChecks.Max()}");
             Console.WriteLine($"your smallest paycheck is {payChecks.Min()}");
@@ -171,7 +227,7 @@ namespace AhbcOctoberWeekFour
 
             foreach (var item in payChecks.Where(paycheck => paycheck > 100))
             {
-                Console.WriteLine(item);
+                Console.WriteLine(item.ToString());
             }
 
             // movies.Where(x => x.StartsWith("P"));

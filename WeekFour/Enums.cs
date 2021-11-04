@@ -11,8 +11,7 @@ namespace AhbcOctoberWeekFour
         Western,
         PersonalDevelopment,
         NonFiction,
-        Mystery,
-        
+        Mystery        
     }
 
     enum EmailTypes
