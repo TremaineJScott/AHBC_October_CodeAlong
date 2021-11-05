@@ -8,7 +8,7 @@ namespace AhbcOctoberWeekFour
 {
     public class Book
     {
-        private List<string> authors = new List<string>();
+        private List<Author> authors = new List<Author>();
         public string Description { get; set; }
         public double Price { get; set; }
 
@@ -58,7 +58,7 @@ namespace AhbcOctoberWeekFour
             PageCount = pageCount;          
         }
 
-        public string AddAuthor(string authorName)
+        public string AddAuthor(string authorName, string emailAddress = "test@test.com")
         {
             string message = "";
 
@@ -77,7 +77,10 @@ namespace AhbcOctoberWeekFour
             }
 
             message = "The author has been added to the book.";
-            authors.Add(authorName);
+            Author authorToAdd = new Author(authorName, emailAddress);
+
+            authors.Add(authorToAdd);
+
             return message;
         }
 
