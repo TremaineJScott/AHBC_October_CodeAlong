@@ -30,7 +30,35 @@ namespace AhbcOctoberWeekFive
 
         public abstract string GoPotty();
 
-        public abstract void Sleep(int hours);     
+        public string Sleep(int hours)
+        {
+            return $"Your animal slept for {hours} hours";
+        }
 
+        /// <summary>
+        /// The method to allow the animal to sleep
+        /// </summary>
+        /// <param name="hours">The number of hours the animal slept</param>
+        /// <param name="location">The location of the sleeping</param>
+        /// <returns></returns>
+        public string Sleep(int hours, string location)
+        {
+            return $"Your animal slept for {hours} hours at {location}";
+        }
+
+        public string Sleep(int hours, int  minutes)
+        {
+            return $"Your animal slept for {hours} hours and {minutes} minutes";
+        }
+
+        public string Sleep(string location, int partners)
+        {
+            return $"Your animal slept at {location} with {partners} friends";
+        }
+
+        public string Sleep(string location)
+        {
+            return $"Your animal slept at {location}";
+        }
     }
 }

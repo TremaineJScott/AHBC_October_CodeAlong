@@ -4,9 +4,9 @@ using System.Text;
 
 namespace AhbcOctoberWeekFive
 {
-    public class Dog : Animal
+    public class Dog : Mammal, ILiveBirthGiver
     {
-        public string FurType { get; set; }
+      
 
         public sealed override string Speak()
         {
@@ -24,9 +24,14 @@ namespace AhbcOctoberWeekFive
             Location = newLocation;
         }
 
-        public override void Sleep(int hours)
+        public void GiveLiveBirth()
         {
-            int sleepTime = hours;
+            throw new NotImplementedException();
         }
+
+        //public override void Sleep(int hours)
+        //{
+        //    int sleepTime = hours;
+        //}
     }
 }

@@ -18,7 +18,7 @@ namespace AhbcOctoberWeekFive
         public static void LogException(Exception ex, DateTime timeOccurred, string userName)
         {
             Console.WriteLine($"{ex.Message},{timeOccurred},{userName}");
-            return "OK";
+            //return "OK";
         }
     }
 }

@@ -4,10 +4,11 @@ using System.Text;
 
 namespace AhbcOctoberWeekFive
 {
-    public class Fish : Animal
+    public class Fish : Animal, IEggLayer
     {
         public int Length { get; set; }
         public string WaterType { get; set; }
+        public int IncubationTime { get; set; }
 
         public override string GoPotty()
         {
@@ -19,9 +20,9 @@ namespace AhbcOctoberWeekFive
             Length = Length + growthAmount;
         }
 
-        public override void Sleep(int hours)
+        public bool LayEggs()
         {
-            int sleepTime = hours;
+            throw new NotImplementedException();
         }
 
         public override string Speak()
