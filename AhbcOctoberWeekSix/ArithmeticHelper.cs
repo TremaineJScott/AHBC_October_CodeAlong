@@ -9,7 +9,15 @@ namespace AhbcOctoberWeekSix
     {
         public int Sum(int firstNumber, int secondNumber)
         {
-            return 5;
+            if (firstNumber == secondNumber)
+            {
+                throw new InvalidOperationException();
+            }
+            else
+            {
+                return firstNumber + secondNumber;
+            }
+            
         }
     }
 }
