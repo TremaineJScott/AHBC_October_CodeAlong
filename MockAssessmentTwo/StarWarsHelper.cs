@@ -25,6 +25,7 @@ namespace MockAssessmentTwo
             return returnValue;
         }
 
+        // April
         public string DeathStarCombat(Dictionary<string, int> combat)
         {
             int maxAttack = combat.Values.Max();
@@ -32,6 +33,7 @@ namespace MockAssessmentTwo
             return strongest;
         }
 
+        // Steve
         public List<string> ConvertPlanets(string[] planets)
         {
             List<string> reversedPlanets = planets.Reverse().ToList();
@@ -54,6 +56,7 @@ namespace MockAssessmentTwo
             return returnValue;
         }
 
+        // Ed
         public string TryToCatchDarthVader(string value)
         {
             try

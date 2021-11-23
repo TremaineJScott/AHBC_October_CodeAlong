@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockAssessmentTwo", "MockAs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockAssessmentTwo.Tests", "MockAssessmentTwo.Test\MockAssessmentTwo.Tests.csproj", "{7F1CDD93-72B7-47EB-AABF-2D7F5310B876}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AhbcOctoberWeekSeven", "AhbcOctoberWeekSeven\AhbcOctoberWeekSeven.csproj", "{DA6B0997-61E7-4DE8-9950-4059156879C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{7F1CDD93-72B7-47EB-AABF-2D7F5310B876}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F1CDD93-72B7-47EB-AABF-2D7F5310B876}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F1CDD93-72B7-47EB-AABF-2D7F5310B876}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA6B0997-61E7-4DE8-9950-4059156879C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA6B0997-61E7-4DE8-9950-4059156879C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA6B0997-61E7-4DE8-9950-4059156879C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA6B0997-61E7-4DE8-9950-4059156879C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
