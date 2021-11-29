@@ -9,6 +9,7 @@ namespace AhbcOctoberWeekSeven
         static void Main(string[] args)
         {
             string testString; 
+            string newTest;
             List<Pokemon> savedList = FileHelper.BuildPokemonList(@"c:\code\pokemonList.txt");
             string namePath = @"c:\code\file1.txt";
             FileHelper.WriteToFile(namePath, "My name is scott");
